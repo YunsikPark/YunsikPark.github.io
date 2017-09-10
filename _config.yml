@@ -1,0 +1,21 @@
+# Site settings
+title: YSP's Dev Log
+email: archysp11@gmail.com
+description: > # YSP's Dev Log
+ YSPlog - YSP's 개발 로그
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://www.ysplog.com/" # the base hostname & protocol for your site
+enable_retina: false
+permalink: :title
+nav_list:
+  Home : ['Home', '/', 'fa-home']
+  About : ['About', '/about', 'fa-anchor']
+  Author : ['Author', '/author/archys', 'fa-user']
+single_footer: '<p>All code, All day. YSPlog &copy; 2017 <a href="/">latest posts</a></p>'
+footer_links:
+    About: ['About', '/about']
+    YSPlog: ['YSPlog 2017', '/about']
+
+
+# Build settings
+# markdown: macdown
