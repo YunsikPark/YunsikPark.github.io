@@ -1,8 +1,7 @@
 # Site settings
 title: YSP's Dev Log
 email: archysp11@gmail.com
-description: > # YSP's Dev Log
- YSPlog - YSP's 개발 로그
+description: 개발 스터디 블로그
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.ysplog.com/" # the base hostname & protocol for your site
 enable_retina: false

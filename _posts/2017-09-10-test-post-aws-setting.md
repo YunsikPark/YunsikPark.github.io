@@ -12,8 +12,7 @@ show_related_posts: false
 square_related: recommend-spain
 ---
 
-# AWS settings
-
+AWS settings
 
 ## 01_Key Pairs생성
 
@@ -41,7 +40,7 @@ square_related: recommend-spain
 	- AmazonRDSFullAccess
 	- AmazonS3FullAccess
 	- AWSElasticBeanstalkFullAccess 선택, CreateUser
-- Access Key ID와 Secret access key는 User생성시에만 볼 수 있으므로 바로 **aws configure**를 실행하여 키 값들을 복사하여 입력 해 준다.
+- Access Key ID와 Secret access key는 User생성시에만 볼 수 있으므로 바로 **aws configure** 를 실행하여 키 값들을 복사하여 입력 해 준다.
 
 
 ```
@@ -65,10 +64,9 @@ import boto3
 session = boto3.Session(profile_name='eb_docker')
 client.create_bucket(Bucket='eb-docker-bucket-archys', CreateBucketConfiguration={'LocationConstraint':'ap-northeast-2'})
 ```
+
 - Bucket은 고유 name
-
 - settings_deploy.json 파일 수정
-
 
 > in terminal
 
@@ -90,7 +88,6 @@ export 해 줄 경우
 export실행 후 eb init만 입력해도 된다
 ```
 
-
 ## eb log 보기
 
 ```
@@ -101,6 +98,7 @@ cd /var/log/
 cat eb-activity.log
 ```
 
+```
 sudo docker exec a54f /root/.pyenv/versions/app/bin/python /srv/django_app/manage.py migrate --noinput --settings=config.settings.deploy
 
 
@@ -115,3 +113,5 @@ sudo docker ps --no-trunc -q -n
 "username": "archys"
 
 password":"asdfasdf"
+
+```
