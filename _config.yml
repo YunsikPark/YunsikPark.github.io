@@ -3,7 +3,7 @@ title: YSP's Dev Log
 email: archysp11@gmail.com
 description: 개발 스터디 블로그
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.ysplog.com/" # the base hostname & protocol for your site
+url: https://yunsikpark.github.io # the base hostname & protocol for your site
 enable_retina: false
 permalink: :title
 nav_list:
